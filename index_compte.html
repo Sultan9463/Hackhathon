@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassuwata – Accueil</title>
+    <link rel="stylesheet" href="style_harckton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="entete">
+        <img src="images/logo.png" alt="">
+        <input type="text" placeholder=" 🔍 Recherche des produits locaux">
+        <button><i class="fa-solid fa-user"></i> Creer un compte</button>
+        <button> <i class="fa-solid fa-cart-shopping"></i> Panier</button>
+        <!-- <a href="index_livraison.html"><button><i class="fa-solid fa-truck-fast"></i>Livraison</button></a> -->
+    </div>
+
+    <div class="menu-burger">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger">
+            <span></span><span></span><span></span>
+        </label>
+
+        <h1>Catégories des produits</h1>
+
+        <nav>
+            <h2>Catégories</h2>
+            <a href="index_cereale.html">Produits céréales</a>
+            <a href="index_artisant.html">Produits artisanat</a>
+            <a href="index_legume.html">Produits légumes</a>
+            <a href="index_divers.html">Produits divers</a>
+        </nav>
+
+        <div class="nav">
+            <a href="index_acceuil.html">Accueil</a>
+            <a href="index_boutique.html">Boutique</a>
+            <a href="index_Apropos.html">À propos</a>
+            <a href="index_livraison.html">Livraison</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="compte_kassouwa">
+        <h1>Bienvenue, veuillez connecter votre compte!</h1>
+
+        <div class="utilisateur">
+                <div class="utile"><i class="fa-solid fa-user"></i></div>
+                <input type="text" placeholder="Entrez votre Nom d'utilisateur" class="code_utile">
+        </div>
+        <div class="utilisateur">
+                <div class="utile"><i class="fa-solid fa-eye-slash"></i></div>
+                <input type="password" placeholder="Entrez votre mots de passe" class="code_utile">
+        </div>
+        <div class="utilisateur_check">
+            <input type="checkbox" class="check"> <label for="">Se souvenir de moi</label>
+        </div>
+        
+        <button class="login">Connecter</button>
+
+        <div class="paragrah">
+                <p>Mot de passe oublié ? <a href="#">Réinitialiser</a></p>
+                <p>Vous n'en avez pas de compte ? <a href="#">Inscrirez-vous</a></p>
+        </div>
+        <h5>Connectez-vous avec un autre compte</h5>
+
+        <div class="reseau">
+            <div class="email">
+                <i class="fa-brands fa-google"></i>
+                Google
+            </div>
+            <div class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+                Facebook
+            </div>
+
+        </div>
+    </div>
+    
+</main>
+
+</body>
+</html>

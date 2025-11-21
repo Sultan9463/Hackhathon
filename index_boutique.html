@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique</title>
+    <link rel="stylesheet" href="boutiquecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+    <div class="entete">
+        <img src="images/logo.png" alt="">
+        <input type="text" placeholder=" 🔍 Recherche des produits locaux">
+       <button><i class="fa-solid fa-user"></i> <a href="#connecting" id="close">Profil</a></button>
+        <button> <i class="fa-solid fa-cart-shopping"></i><a href="#choopp" id="ferme"> Panier</a></button>
+       <!-- <a href="index_livraison.html"><button><i class="fa-solid fa-truck-fast"></i>Livraison</button></a> -->
+    </div>
+
+    <div class="menu-burger">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger">
+            <span></span><span></span><span></span>
+        </label>
+
+        <h1>Catégories des produits</h1>
+
+        <nav>
+            <h2>Catégories</h2>
+            <a href="index_cereale.html">Produits céréales</a>
+            <a href="index_artisant.html">Produits artisanat</a>
+            <a href="index_legume.html">Produits légumes</a>
+            <a href="index_divers.html">Produits divers</a>
+        </nav>
+
+        <div class="nav">
+            <a href="index_acceuil.html">Accueil</a>
+            <a href="index_boutique.html" class="active">Boutique</a>
+            <a href="index_Apropos.html">À propos</a>
+            <a href="index_livraison.html">Livraison</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<div class="conteneur-principal">
+    <!-- Barre latérale pour les promotions -->
+    <aside class="barre-laterale-promo">
+        <h3 class="titre-promo">Promotions</h3>
+        <div class="liste-promo">
+            <!-- Produit en promotion 1 -->
+            <div class="produit-promo">
+                <img src="tomate.jpg" alt="Promotion de tomate frais">
+                <div class="details-promo">
+                    <p class="nom-promo">Tomates fraîches</p>
+                    <p class="prix-promo">8000 FCFA/Kg <span class="ancien-prix">9000 FCFA/Kg</span></p>
+                </div>
+            </div>
+            <!-- Produit en promotion 2 -->
+            <div class="produit-promo">
+                <img src="boubou.jpg" alt="Promotion de boubou cousus">
+                <div class="details-promo">
+                    <p class="nom-promo">BOUBOU COUSU ARTISANALE</p>
+                    <p class="prix-promo">12000FCFA<span class="ancien-prix"> 15000FCFA</span></p>
+                </div>
+            </div>
+            <!-- Produit en promotion 3 -->
+            <div class="produit-promo">
+                <img src="jus.jpg" alt="Promotion JUS NATUREL">
+                <div class="details-promo">
+                    <p class="nom-promo">JUS NATUREL</p>
+                    <p class="prix-promo">400 FCFA <span class="ancien-prix">500 FCFA</span></p>
+                </div>
+            </div>
+            <!-- Produit en promotion 4 -->
+            <div class="produit-promo">
+                <img src="BeurreArachid.jpg" alt="Promotion BEURRE D'ARACHIDE">
+                <div class="details-promo">
+                    <p class="nom-promo">Beurre d’arachide</p>
+                    <p class="prix-promo">2000FCFA <span class="ancien-prix"> 2500FCFA</span></p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Section principale -->
+    <div class="section-principale">
+
+        <!-- En-tête avec informations -->
+        <div class="en-tete-boutique">
+            <p class="compteur-produits">69 produits trouvés</p>
+            <div class="controles-affichage">
+                <label for="filter-toggle" class="bouton-filtre"><i class="fas fa-filter"></i> Filtrer</label>
+                <select class="select-tri">
+                    <option>Trier par: Prix croissant</option>
+                    <option>Trier par: Prix décroissant</option>
+                    <option>Trier par: Moy. Note</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Grille des produits -->
+        <div class="grille-produits">
+
+            <!-- Produit 1 -->
+            <div class="carte-produit">
+                <div class="image-produit">
+                    <img src="tomate.jpg" alt="Tomate frais">
+                    <!-- Actions au survol -->
+                    <div class="actions-produit">
+                        <button class="icone-action" title="Ajouter au panier">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                        <button class="icone-action" title="Ajouter aux favoris">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icone-action" title="Partager">
+                            <i class="fas fa-share"></i>
+                        </button>
+                    </div>
+                    <!-- Bouton aperçu au survol -->
+                    <a class="bouton-apercu" href="#product-popup-1">Aperçu rapide</a>
+                </div>
+                <div class="details-produit">
+                    <span class="categorie">Tomates fraîches</span>
+                    <h3 class="nom-produit">Tomates fraîches, rouges et juteuses, cultivées avec soin pour une saveur authentique et naturelle.</h3>
+                    <p class="prix">9 00 FCFA/Kg</p>
+                    <div class="evaluation">
+                        <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <span class="nombre-avis">(4)</span>
+                    </div>
+                </div>
+            </div>
+                        
+            <!-- Produit 2 -->
+            <div class="carte-produit">
+                <div class="image-produit">
+                    <img src="BeurreArachid.jpg" alt="BEURRE D'ARACHIDE">
+                    <!-- Actions au survol -->
+                    <div class="actions-produit">
+                        <button class="icone-action" title="Ajouter au panier">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                        <button class="icone-action" title="Ajouter aux favoris">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icone-action" title="Partager">
+                            <i class="fas fa-share"></i>
+                        </button>
+                    </div>
+                    <!-- Bouton aperçu au survol -->
+                    <a class="bouton-apercu" href="#product-popup-2">Aperçu rapide</a>
+                </div>
+                <div class="details-produit">
+                    <span class="categorie">Beurre d’arachide</span>
+                    <h3 class="nom-produit">Beurre d’arachide onctueux et savoureux, parfait pour tartiner ou enrichir vos recettes.</h3>
+                    <p class="prix">2 500 FCFA</p>
+                    <div class="evaluation">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="nombre-avis">(1)</span>
+                    </div>
+                </div>
+            </div>
+                        
+            <!-- Produit 3 -->
+            <div class="carte-produit">
+                <div class="image-produit">
+                    <img src="Bracelet-touareg.jpg" alt="BRACLET TOUAREG ARTISANALE">
+                    <!-- Actions au survol -->
+                    <div class="actions-produit">
+                        <button class="icone-action" title="Ajouter au panier">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                        <button class="icone-action" title="Ajouter aux favoris">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icone-action" title="Partager">
+                            <i class="fas fa-share"></i>
+                        </button>
+                    </div>
+                    <!-- Bouton aperçu au survol -->
+                    <a class="bouton-apercu" href="#product-popup-3">Aperçu rapide</a>
+                </div>
+                <div class="details-produit">
+                    <span class="categorie">Bracelet touareg artisanal</span>
+                    <h3 class="nom-produit">Bijou touareg façonné à la main, en argent massif, reflétant l’art et la culture nomade.</h3>
+                    <p class="prix">5 000 FCFA</p>
+                    <div class="evaluation">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="nombre-avis">(3)</span>
+                    </div>
+                </div>
+            </div>
+                        
+            <!-- Produit 4 -->
+            <div class="carte-produit">
+                <div class="image-produit">
+                    <img src="chaine-touareg.jpeg" alt="CHAINE TOUAREG ARTISANALE">
+                    <!-- Actions au survol -->
+                    <div class="actions-produit">
+                        <button class="icone-action" title="Ajouter au panier">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                        <button class="icone-action" title="Ajouter aux favoris">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="icone-action" title="Partager">
+                            <i class="fas fa-share"></i>
+                        </button>
+                    </div>
+                    <!-- Bouton aperçu au survol -->
+                    <a class="bouton-apercu" href="#product-popup-4">Aperçu rapide</a>
+                </div>
+                <div class="details-produit">
+                    <span class="categorie">Chaîne touareg artisanale</span>
+                    <h3 class="nom-produit">Chaîne touareg artisanale, reflet du savoir‑faire ancestral et des symboles du désert saharien.</h3>
+                    <p class="prix">7 500 FCFA</p>
+                    <div class="evaluation">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="nombre-avis">(12)</span>
+                    </div>
+                </div>
+            </div>
+                        
+                                    <!-- Produit 5 -->
+                                    <div class="carte-produit">
+                                        <div class="image-produit">
+                                            <img src="chaussure.jpg" alt="CHAUSSURE ARTISANALE">
+                                            <!-- Actions au survol -->
+                                            <div class="actions-produit">
+                                                <button class="icone-action" title="Ajouter au panier">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                                <button class="icone-action" title="Ajouter aux favoris">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                                <button class="icone-action" title="Partager">
+                                                    <i class="fas fa-share"></i>
+                                                </button>
+                                            </div>
+                                            <!-- Bouton aperçu au survol -->
+                                            <a class="bouton-apercu" href="#product-popup-5">Aperçu rapide</a>
+                                        </div>
+                                        <div class="details-produit">
+                                            <span class="categorie">CHAUSSURE ARTISANALE</span>
+                                            <h3 class="nom-produit">Chaussure artisanale faite main, en cuir véritable, reflet d’un savoir‑faire traditionnel unique.</h3>
+                                            <p class="prix">3 500 FCFA</p>
+                                            <div class="evaluation">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <span class="nombre-avis">(8)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Produit 6 -->
+                                    <div class="carte-produit">
+                                        <div class="image-produit">
+                                            <img src="il_300x300.1947087830_r0s3.webp" alt="TISSU ARTISANALE">
+                                            <!-- Actions au survol -->
+                                            <div class="actions-produit">
+                                                <button class="icone-action" title="Ajouter au panier">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                                <button class="icone-action" title="Ajouter aux favoris">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                                <button class="icone-action" title="Partager">
+                                                    <i class="fas fa-share"></i>
+                                                </button>
+                                            </div>
+                                            <!-- Bouton aperçu au survol -->
+                                            <a class="bouton-apercu" href="#product-popup-6">Aperçu rapide</a>
+                                        </div>
+                                        <div class="details-produit">
+                                            <span class="categorie">TISSU ARTISANAL</span>
+                                            <h3 class="nom-produit">Tissu artisanal fabriqué avec des fibres naturelles, alliant qualité, durabilité et élégance.</h3>
+                                            <p class="prix">4 500 FCFA</p>
+                                            <div class="evaluation">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                 <span class="nombre-avis">(15)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        
+                                    <!-- Produit 7 -->
+                                    <div class="carte-produit">
+                                        <div class="image-produit">
+                                            <img src="boubou.jpg" alt="BOUBOU COUSUS ARTISANALE">
+                                            <!-- Actions au survol -->
+                                            <div class="actions-produit">
+                                                <button class="icone-action" title="Ajouter au panier">
+                                                     <i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                                <button class="icone-action" title="Ajouter aux favoris">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                                <button class="icone-action" title="Partager">
+                                                    <i class="fas fa-share"></i>
+                                                </button>
+                                            </div>
+                                            <!-- Bouton aperçu au survol -->
+                                            <a class="bouton-apercu" href="#product-popup-7">Aperçu rapide</a>
+                                        </div>
+                                        <div class="details-produit">
+                                            <span class="categorie">BOUBOU COUSU ARTISANALE</span>
+                                                <h3 class="nom-produit">Boubou artisanal cousu sur mesure, alliant confort, authenticité et style intemporel.</h3>
+                                                <p class="prix">1 5000 FCFA</p>
+                                                <div class="evaluation">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                     <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <span class="nombre-avis">(4)</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                                                                                            
+                                    <!-- Produit 8 -->
+                                    <div class="carte-produit">
+                                        <div class="image-produit">
+                                            <img src="bague-argent.jpg" alt="BAGUE D'ARGENT ARTISANALE">
+                                            <!-- Actions au survol -->
+                                            <div class="actions-produit">
+                                                <button class="icone-action" title="Ajouter au panier">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                                <button class="icone-action" title="Ajouter aux favoris">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                                <button class="icone-action" title="Partager">
+                                                    <i class="fas fa-share"></i>
+                                                </button>
+                                            </div>
+                                            <!-- Bouton aperçu au survol -->
+                                            <a class="bouton-apercu" href="#product-popup-8">Aperçu rapide</a>
+                                        </div>
+                                        <div class="details-produit">
+                                            <span class="categorie">BAGUE D'ARGENT ARTISANALE</span>
+                                            <h3 class="nom-produit">Bague en argent 925, réalisée artisanalement, alliant élégance et authenticité.</h3>
+                                            <p class="prix">7 000 FCFA</p>
+                                            <div class="evaluation">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span class="nombre-avis">(1)</span>
+                                            </div>
+                                        </div>
+                                </div>
+                                                                                                            
+                            <!-- Produit 9 -->
+                            <div class="carte-produit">
+                                <div class="image-produit">
+                                    <img src="Chapeau.jpg" alt="CHAPEAU TRADITIONNEL">
+                                    <!-- Actions au survol -->
+                                    <div class="actions-produit">
+                                        <button class="icone-action" title="Ajouter au panier">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button class="icone-action" title="Ajouter aux favoris">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                        <button class="icone-action" title="Partager">
+                                            <i class="fas fa-share"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Bouton aperçu au survol -->
+                                    <a class="bouton-apercu" href="#product-popup-9">Aperçu rapide</a>
+                                </div>
+                                <div class="details-produit">
+                                    <span class="categorie">CHAPEAU TRADITIONNEL</span>
+                                    <h3 class="nom-produit">hapeau traditionnel fait main, confectionné avec des matériaux naturels et des finitions soignées.</h3>
+                                    <p class="prix">3 000 FCFA</p>
+                                    <div class="evaluation">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span class="nombre-avis">(3)</span>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            
+                            <!-- Produit 10 -->
+                            <div class="carte-produit">
+                                <div class="image-produit">
+                                    <img src="jus.jpg" alt="JUS NATUREL">
+                                    <!-- Actions au survol -->
+                                    <div class="actions-produit">
+                                        <button class="icone-action" title="Ajouter au panier">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button class="icone-action" title="Ajouter aux favoris">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                        <button class="icone-action" title="Partager">
+                                            <i class="fas fa-share"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Bouton aperçu au survol -->
+                                    <a class="bouton-apercu" href="#product-popup-10">Aperçu rapide</a>
+                                </div>
+                                <div class="details-produit">
+                                    <span class="categorie">JUS NATUREL</span>
+                                    <h3 class="nom-produit">Jus 100% naturel, riche en vitamines et sans additifs, idéal pour une alimentation équilibrée.</h3>
+                                    <p class="prix">5 00 FCFA</p>
+                                    <div class="evaluation">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="nombre-avis">(12)</span>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            
+                            <!-- Produit 11 -->
+                            <div class="carte-produit">
+                                <div class="image-produit">
+                                    <img src="chapeau_peulh.jpg" alt="CHAPEU PEULH ARTISANAL">
+                                    <!-- Actions au survol -->
+                                    <div class="actions-produit">
+                                        <button class="icone-action" title="Ajouter au panier">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        <button class="icone-action" title="Ajouter aux favoris">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                        <button class="icone-action" title="Partager">
+                                            <i class="fas fa-share"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Bouton aperçu au survol -->
+                                    <a class="bouton-apercu" href="#product-popup-11">Aperçu rapide</a>
+                                </div>
+                                <div class="details-produit">
+                                    <span class="categorie">CHAPEU PEULH ARTISANAL</span>
+                                    <h3 class="nom-produit">Chapeau peulh artisanal unique, alliance parfaite entre authenticité, confort et style intemporel.</h3>
+                                    <p class="prix">3 500 FCFA</p>
+                                    <div class="evaluation">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span class="nombre-avis">(8)</span>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                            
+                            <!-- Produit 12 -->
+                        <div class="carte-produit">
+                            <div class="image-produit">
+                            <img src="plats.webp" alt="PLAT TRADITIONNEL">
+                            <!-- Actions au survol -->
+                            <div class="actions-produit">
+                                <button class="icone-action" title="Ajouter au panier">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button class="icone-action" title="Ajouter aux favoris">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="icone-action" title="Partager">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                            <!-- Bouton aperçu au survol -->
+                                <a class="bouton-apercu" href="#product-popup-12">Aperçu rapide</a>
+                            </div>
+                            <div class="details-produit">
+                                <span class="categorie">PLAT TRADITIONNEL</span>
+                                <h3 class="nom-produit">Plat traditionnel préparé selon des recettes ancestrales, reflétant la richesse du patrimoine culinaire local</h3>
+                                <p class="prix">1 500 Fr</p>
+                                <div class="evaluation">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                        <span class="nombre-avis">(15)</span>
+                                </div>
+                            </div>
+                        </div>
+                                                                                                            
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">&raquo;</a>
+                </div>
+                                                                                                            
+            </div>
+        </div>                    
+        <!-- Case à cocher pour contrôler le popup de filtre -->
+        <input type="checkbox" id="filter-toggle" class="hidden-checkbox">
+                    
+        <!-- Popup de Filtre -->
+        <div id="filter-popup" class="popup-overlay">
+            <label for="filter-toggle" class="popup-background-closer"></label>
+            <div class="popup-contenu">
+                <div class="popup-en-tete">
+                    <h2>Filtrer les produits</h2>
+                    <label for="filter-toggle" class="popup-fermer">&times;</label>
+                </div>
+                <div class="popup-corps">
+                <!-- Marge de prix -->
+                <div class="filtre-groupe">
+                    <label>Marge de prix (FCFA)</label>
+                    <div class="prix-input-conteneur">
+                        <div class="prix-champ">
+                            <span>Min</span>
+                            <input type="number" class="prix-input" value="100" placeholder="100">
+                        </div>
+                        <div class="separateur-prix">-</div>
+                        <div class="prix-champ">
+                            <span>Max</span>
+                            <input type="number" class="prix-input" value="9000" placeholder="9000">
+                        </div>
+                    </div>
+                </div>
+                <!-- Catégorie -->
+                <div class="filtre-groupe">
+                    <label for="category-select">Catégorie</label>
+                    <select id="category-select" name="category-select">
+                        <option value="">Toutes les catégories</option>
+                        <option value="boissons">Produits alimentaires artisanaux</option>
+                        <option value="gouters">Bijoux et accessoires artisanaux</option>
+                        <option value="naturels">Mode et habillement traditionnel</option>
+                    </select>
+                </div>
+                <!-- Note du produit -->
+                <div class="filtre-groupe">
+                    <label>Note du produit</label>
+                    <div class="rating-filter">
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 étoiles"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 étoiles"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 étoiles"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 étoiles"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 étoile"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-pied">
+                <button class="bouton-appliquer">Appliquer les filtres</button>
+            </div>
+        </div>
+    </div>
+                    
+    <!-- Popups Aperçu Rapide du Produit -->
+    <div id="product-popup-1" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="tomate.jpg" alt="Tomate frais">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">TOMATES FRAÎCHES</h2>
+                    <p class="popup-prix-produit">9 00 FCFA/Kg</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <span class="nombre-avis">(4 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Tomates rouges et juteuses, cultivées localement avec soin. Leur chair ferme et savoureuse en fait un ingrédient incontournable pour les salades, sauces et plats traditionnels. </br>
+                        - Points forts : fraîcheur garantie, goût authentique, riches en vitamines.</br>
+                        - Mots‑clés SEO : tomates fraîches, légumes naturels, produits locaux.</br>
+
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-2" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="BeurreArachid.jpg" alt="BEURRE D'ARACHIDE">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">BEURRE D'ARACHIDE</h2>
+                    <p class="popup-prix-produit">2 500 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="nombre-avis">(1 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Beurre d’arachide artisanal, préparé à partir d’arachides soigneusement grillées et broyées. Sa texture onctueuse et son goût intense en font un allié parfait pour les tartines, desserts ou recettes énergétiques.</br>
+                        - Points forts : 100% naturel, riche en protéines, sans additifs.</br>
+                        - Mots‑clés SEO : beurre d’arachide naturel, pâte d’arachide, produit artisanal.</br>
+
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-3" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="Bracelet-touareg.jpg" alt="BRACLET TOUAREG ARTISANALE">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">BRACELET TOUAREG ARTISANAL</h2>
+                    <p class="popup-prix-produit">5 000 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="nombre-avis">(3 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Bracelet en argent massif, façonné à la main par des artisans touaregs. Ses motifs géométriques reflètent l’identité culturelle et le savoir‑faire ancestral du désert saharien.</br>
+                        - Points forts : pièce unique, argent 925, fait main.</br>
+                        - Mots‑clés SEO : bracelet touareg, bijou artisanal, argent massif.</br>
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-4" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="chaine-touareg.jpeg" alt="CHAINE TOUAREG ARTISANALE">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">CHAÎNE TOUAREG ARTISANALE</h2>
+                    <p class="popup-prix-produit">7 500 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="nombre-avis">(12 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Chaîne en argent réalisée artisanalement, ornée de motifs traditionnels touaregs. Élégante et intemporelle, elle incarne l’authenticité et la finesse du travail manuel.</br>
+                        - Points forts : argent massif, artisanat touareg, design unique.</br>
+                        - Mots‑clés SEO : chaîne touareg, bijou artisanal, argent 925.</br>
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-5" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="chaussure.jpg" alt="CHAUSSURE ARTISANALE">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">CHAUSSURE ARTISANALE</h2>
+                    <p class="popup-prix-produit">3 500 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="nombre-avis">(8 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Chaussures faites main, réalisées avec des matériaux durables comme le cuir ou le tissu traditionnel. Elles allient confort, authenticité et style intemporel.</br>
+                        - Points forts : fait main, durable, design unique.</br>
+                        - Mots‑clés SEO : chaussures artisanales, cuir fait main, mode africaine.</br>
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-6" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="il_300x300.1947087830_r0s3.webp" alt="TISSU ARTISANALE">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">TISSU ARTISANAL</h2>
+                    <p class="popup-prix-produit">4 500 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="nombre-avis">(15 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Tissus tissés à la main, aux motifs et couleurs traditionnels. Chaque pièce est unique et peut être utilisée pour la confection de vêtements ou la décoration intérieure.</br>
+                        - Points forts : fibres naturelles, motifs traditionnels, pièce unique.</br>
+                        - Mots‑clés SEO : tissu artisanal, tissu africain, textile traditionnel.</br>
+
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-7" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="boubou.jpg" alt="BOUBOU COUSUS ARTISANALE">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">BOUBOU COUSU ARTISANALE</h2>
+                    <p class="popup-prix-produit">1 5000 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <span class="nombre-avis">(4 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Boubou cousu à la main, confectionné avec des tissus de qualité et des finitions soignées. Il incarne l’élégance africaine et peut être porté lors de cérémonies ou au quotidien.</br>
+                        - Points forts : tissu traditionnel, coupe confortable, pièce unique.</br>
+                        - Mots‑clés SEO : boubou artisanal, vêtement africain, habillement traditionnel.</br>
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-8" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="bague-argent.jpg" alt="BAGUE D'ARGENT ARTISANALE">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">BAGUE D'ARGENT ARTISANALE</h2>
+                    <p class="popup-prix-produit">7 000 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="nombre-avis">(1 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Bague en argent 925, sculptée à la main avec des motifs traditionnels. Chaque pièce est unique et témoigne du savoir‑faire des artisans locaux.</br>
+                        - Points forts : argent massif, fait main, motifs symboliques.</br>
+                        - Mots‑clés SEO : bague artisanale, bague argent, bijou touareg.</br>
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-9" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="Chapeau.jpg" alt="CHAPEAU TRADITIONNEL">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">CHAPEAU TRADITIONNEL</h2>
+                    <p class="popup-prix-produit">3 000 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="nombre-avis">(3 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Chapeau artisanal confectionné avec des matériaux naturels comme la paille ou le cuir. Il reflète l’identité culturelle et offre confort et élégance.</br>
+                        - Points forts : fait main, durable, style authentique.</br>
+                        - Mots‑clés SEO : chapeau artisanal, couvre‑chef traditionnel, mode africaine.</br>
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-10" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="jus.jpg" alt="JUS NATUREL">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">JUS NATUREL</h2>
+                    <p class="popup-prix-produit">5 00 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="nombre-avis">(12 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Jus artisanal préparé avec des fruits frais sélectionnés. Sans sucre ajouté ni conservateurs, il offre une boisson saine et rafraîchissante, idéale pour toute la famille.</br>
+                        - Points forts : riche en vitamines, goût authentique, production locale.</br>
+                        - Mots‑clés SEO : jus naturel, boisson artisanale, jus de fruits frais.</br>
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-11" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="chapeau_peulh.jpg" alt="CHAPEU PEULH ARTISANAL">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">CHAPEU PEULH ARTISANAL</h2>
+                    <p class="popup-prix-produit">3 500 FCFA</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="nombre-avis">(8 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Chapeau peulh fait main, emblématique de la culture pastorale. Confectionné avec des fibres végétales et des finitions soignées, il incarne tradition et authenticité.</br>
+                        - Points forts : pièce culturelle, fait main, durable.</br>
+                        - Mots‑clés SEO : chapeau peulh, artisanat africain, couvre‑chef traditionnel.</br>
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-popup-12" class="popup-overlay product-popup">
+        <a href="#" class="popup-background-closer"></a>
+        <div class="popup-contenu">
+            <a href="#" class="popup-fermer">&times;</a>
+            <div class="popup-corps-produit">
+                <div class="popup-image-produit">
+                    <img src="plats.webp" alt="PLAT TRADITIONNEL">
+                </div>
+                <div class="popup-details-produit">
+                    <h2 class="popup-nom-produit">PLAT TRADITIONNEL</h2>
+                    <p class="popup-prix-produit">1 500 Fr</p>
+                    <div class="popup-evaluation-produit">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="nombre-avis">(15 avis)</span>
+                    </div>
+                    <p class="popup-description-produit">
+                        - Description longue : Plat artisanal préparé selon des recettes ancestrales, mettant en valeur les saveurs locales. Chaque préparation reflète la richesse culturelle et culinaire de la région.</br>
+                        - Points forts : recette authentique, ingrédients locaux, saveur unique.</br>
+                        - Mots‑clés SEO : plat traditionnel, cuisine africaine, recette artisanale.</br>
+                    </p>
+                    <div class="popup-actions-produit">
+                        <div class="selecteur-quantite">
+                            <button class="btn-quantite">-</button>
+                            <input type="text" class="input-quantite" value="1">
+                            <button class="btn-quantite">+</button>
+                        </div>
+                        <button class="bouton-action-produit btn-ajout-panier">
+                            <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                        </button>
+                    </div>
+                    <button class="bouton-action-produit btn-acheter-maintenant">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+    
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <img src="./photo/logo.png" alt="Logo" class="footer-logo">
+            <p>Votre boutique de vente des produits locaux made in Niger.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Moyens de paiement</h4>
+            <div class="payments">
+                <img src="./photo/nita.png" alt="Nita">
+                <img src="./photo/amana.jpg" alt="Amana">
+                <img src="./photo/zamani-cash.png" alt="zamani-cash">
+                <img src="./photo/airtel-money.png" alt="airtel-money">
+                <img src="./photo/carte-credit.avif" alt="carte-credit">
+            </div>
+        </div>
+       
+        <div class="footer-section">
+            <h3>Contactez-nous</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Say-Sadoré</p>
+            <p><i class="fa-duotone fa-regular fa-at"></i> Groupe3@gmail.com</p>
+            <p><i class="fa-duotone fa-solid fa-phone"></i> +227 0102030405</p>
+        </div>
+
+  
+        <div class="footer-section">
+            <h3>Suivez-nous</h3>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="copyright">©2025 Hackaton1 Codeloccol — groupe3 Cohorte4</p>
+</footer>
+</main>
+
+<div class="poppop" id="connecting">
+    <div class="compte_kassouwa">
+        <h1>Bienvenue, veuillez connecter votre compte!</h1>
+
+        <div class="utilisateur">
+                <div class="utile"><i class="fa-solid fa-user"></i></div>
+                <input type="text" placeholder="Entrez votre Nom d'utilisateur" class="code_utile">
+        </div>
+        <div class="utilisateur">
+                <div class="utile"><i class="fa-solid fa-eye-slash"></i></div>
+                <input type="password" placeholder="Entrez votre mots de passe" class="code_utile">
+        </div>
+        <div class="utilisateur_check">
+            <input type="checkbox" class="check"> <label for="">Se souvenir de moi</label>
+        </div>
+        
+        <button class="login">Connecter</button>
+
+        <div class="paragrah">
+                <p>Mot de passe oublié ? <a href="#">Réinitialiser</a></p>
+                <p>Vous n'en avez pas de compte ? <a href="#">Inscrirez-vous</a></p>
+        </div>
+        <h5>Connectez-vous avec un autre compte</h5>
+
+        <div class="reseau">
+            <div class="email">
+                <i class="fa-brands fa-google"></i>
+                Google
+            </div>
+            <div class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+                Facebook
+            </div>
+        </div>
+        <div class="ferme">
+                <a href="#close">fermer</a>
+        </div>
+    </div>
+</div>
+
+<div class="Pop_panier" id="choopp">
+    <div class="panier_choopping">
+        <div class="choopping">
+            <div><i class="fa-solid fa-basket-shopping"></i>
+                Panier
+            </div>
+            <div>
+                <a href="#ferme">
+                    Fermer
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="chooping_contenus">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <h4>Votre panier est vide</h4>
+            <p>Aucun article ajouté à votre panier. 
+                Veuillez ajouter le produit à votre au panier.</p>
+
+        </div>
+
+         <div class="choopping_footer">
+            <div class="tatal">
+                <div>
+                Total de Montant
+                </div>
+                <div>
+                    0 Fcfa
+                </div>
+            </div>
+            <div class="mod_de_payement">
+                Aller au Paiement
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
