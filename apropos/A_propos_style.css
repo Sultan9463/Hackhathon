@@ -1,19 +1,33 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+    /* padding: 0 20px; */
 }
 
-html {
-    scroll-behavior: smooth;
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 9%;
+    gap: 10px;
+    background-color: white;
 }
+
 
 header {
+    top: 0;
     display: flex;
     flex-direction: column;
     height: 100px;
@@ -24,17 +38,17 @@ header {
 }
 
 .menu-burger {
-    display: flex;
     width: 100%;
+
+    display: flex;
+    /* width: 100%; */
     height: 100px;
-    align-items: center;
     /* background-color: #ac7fec; */
     padding-inline: 180px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #dddbf2;
 }
-
 .burger {
     width: 40px;
     height: 40px;
@@ -63,7 +77,7 @@ nav {
     background-color: rgb(238, 230, 220);
     width: 250px;
     height: 370px;
-    margin-top: 60px;
+    margin-top: 70px;
     border-radius: 6px;
     display: none;
     align-items: center;
@@ -127,7 +141,6 @@ button {
 .nav {
     /* width: 50%; */
     padding-left: 30px;
-
 }
 
 .nav a {
@@ -137,272 +150,118 @@ button {
     padding-right: 5px;
     color: #333;
     border-right: 2px solid red;
+
 }
 
 .nav a:hover {
     color: #2ec4b6;
 }
 
-main {
+
+/* -------------------- SECTION HERO -------------------- */
+
+.bienvenu{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
-    /* height: 100vh; */
-    padding-top: 11%;
-    gap: 10px;
-    background-color: white;
+    justify-content: space-between;
+    padding: 60px 0;
+    gap: 40px;
 }
 
-main h3 {
-    width: 100%;
-    padding-inline: 30px;
-    text-align: start;
-    /* position: fixed; */
+.bienvenu_text h1 {
+    font-size: 32px;
+    font-weight: 700;
 }
 
-.contenaire {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    gap: 25px;
+.bienvenu_text h1 span {
+    color: #6c7bff;
 }
 
-.cereal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.4s ease;
+.bienvenu_text p {
+    font-size: 16px;
 }
 
-.card {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: center;
-    gap: 10px;
+.bienvenu_img img {
+    width: 420px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-.cereal:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    border: 4px solid #30C4B6;
-}
+/* -------------------- MISSION -------------------- */
 
-
-.card h4 {
+.mission {
     text-align: center;
+    padding: 60px 20px;
+}
+
+.mission h2 {
+    font-size: 32px;
+    color: #f5a623;
+}
+
+.mission p {
+    margin-top: 15px;
+    font-size: 18px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------------- AVANTAGES -------------------- */
+
+.pourquoi {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.pourquoi h2 {
+    font-size: 32px;
+    color: #f5a623;
+}
+
+.text_pourquoi {
+    margin-top: 10px;
     font-size: 18px;
 }
 
-.start {
-    width: 300px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-size: 9px;
-    color: #2ec4b6;
+.pourquoi_contenu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px 0;
 }
 
-.cereal img {
-    width: 320px;
-    height: 260px;
+.carte {
+    border: 1px solid #eee;
+    padding: 25px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(white) padding-box, 
 }
 
-.detail {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    background-color: #30C4B6;
+.carte:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+   border: 2px solid #F6A622;
 }
 
-.voir_contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: -100%;
-    position: absolute;
-    position: fixed;
-    backdrop-filter: blur(3px);
-    border: solid red;
-}
-
-.call_me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 430px;
-    height: 400px;
-    padding: 10px;
-    background-color: rgb(249, 240, 240);
-    box-shadow: 1px 0 1px black;
-    border-radius: 15px;
-}
-
-.mes_contact {
-    display: flex;
-    flex-direction: column;
-    width: 430px;
-    height: 480px;
-    padding-top: 20px;
-    gap: 17px;
-    padding: 40px;
-}
-
-a {
-    text-decoration: none;
-}
-
-#Mijinyawa:target {
-    left: 0;
-}
-
-.sign {
-    display: flex;
-    gap: 10px;
-}
-
-.sign i {
-    font-size: 26px;
-}
-
-.mes_contact a {
-    width: 13px;
-}
-
-.mes_contact a:hover {
-    color: red;
-}
-
-.whatsapp img {
-    width: 25px;
-}
-
-.ajout-panier {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.carte img {
     width: 200px;
-    font-size: 14px;
-    background-color: #2ec4b6;
-    height: 60px;
+    height: 200px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+    border: 10px solid #f5a623;
 }
 
-.acheter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-size: 14px;
-    width: 250px;
-    background-color: #93761d;
-    height: 60px;
-}
-
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* livraison----------------------------- */
-.cmd {
-    display: flex;
-    align-items: center;
-    padding-top: 60px;
-    font-size: 28px;
-}
-
-.cmd img {
-    animation: flotant 2s ease-in-out infinite alternate;
-}
-
-@keyframes flotant {
-    form {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(100px);
-    }
-}
-
-.livrer {
-    width: 500px;
-}
-
-.livrer p {
+.card h3 {
     font-size: 20px;
-    padding-bottom: 10px;
-    line-height: 1.8;
-}
-
-span {
-    color: #EEAD33
-}
-
-.trading {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    display: flex;
-    /* padding-top: 20px; */
-}
-
-.direct {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(238, 230, 220);
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-
-p.commentaire {
-    width: 440px;
-    text-align: justify;
-    font-size: 20px;
-    /* padding-top: 40px; */
-    line-height: 1.8;
-
-}
-
-.code {
-    width: 300px;
-    height: 50px;
-    font-size: 12px;
-    border-radius: 0px;
-    border: 1px solid rgb(238, 230, 220);
-    ;
-    background-color: white;
-    outline: none;
-}
-
-.code::placeholder {
-    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 100px;
 }
 
 
 
 
-/* fin livraison----------------- */
 
 /* creer un compte------------------------- */
 
@@ -420,6 +279,8 @@ p.commentaire {
 }
 
 .compte_kassouwa {
+    position: relative;
+    top: 4%;
     width: 600px;
     display: flex;
     padding: 30px;
@@ -600,6 +461,8 @@ p.commentaire {
 }
 
 .panier_choopping {
+    position: relative;
+    top: 2%;
     width: 350px;
     height: 700px;
     display: flex;
@@ -670,22 +533,19 @@ p.commentaire {
 
 .footer {
     width: 100%;
-    background: #dddbf2;
+    background: #5F6DF7;
     color: #fff;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     bottom: 0;
-    color: #000000;
 }
-
 .footer-container {
     max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-
+    
 }
-
 .footer-section {
     padding: 20px 0;
     margin-bottom: 40px;
@@ -701,17 +561,15 @@ p.commentaire {
     transition: 0.5s ease;
     cursor: pointer;
 }
-
 .payments img:hover {
-    transform: scale(1.5);
+   transform: scale(1.5);
 
 }
 
-.footer-section h3,
+.footer-section h3, 
 .footer-section h4 {
     margin-bottom: 10px;
 }
-
 .socials a i {
     font-size: 30px;
     margin-right: 10px;
@@ -733,140 +591,88 @@ p.commentaire {
     margin-top: 20px;
     opacity: 0.8;
 }
-
+/* ------------------------------- */
 
 @media (max-width: 1440px) {
-    input {
+    input{
         width: 350px;
     }
-
-    .menu-burger {
+    .menu-burger{
         align-items: center;
         justify-content: center;
         height: 70px;
     }
-
-    main {
-        padding-top: 14%;
+   
+     main {
+        padding-top: 10%;
     }
-
-    .compte_kassouwa,
-    .panier_choopping {
-        position: absolute;
-        top: 20%;
+    .compte_kassouwa, .panier_choopping {
+    position: absolute;
+    top: 20%; 
     }
 }
 
+/* -------------------- RESPONSIVE -------------------- */
 
-/* --- 1024px --- */
 @media (max-width: 1024px) {
+
     main {
         padding-top: 20%;
     }
-
-    .entete {
-        padding-inline: 20px;
-        gap: 20px;
+     .entete{
+        flex-wrap: wrap;
+        gap: 50px;
     }
-
-    .nav {
-        width: 600px;
-    }
-
-    .entete img {
+     .entete img{
         width: 200px;
         height: 120;
     }
-
-    .menu-burger {
-        font-size: 10px;
-        padding-inline: 40px;
+    .menu-burger{
+      font-size: 10px;
     }
-
-    .contenaire {
-        display: grid;
-        grid-template-columns: 300px 300px 300px;
-        gap: 25px;
-    }
-
-    .nav {
-        width: 500px;
-        padding-left: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .bienvenu {
+        flex-direction: column;
         text-align: center;
-        gap: 16px;
     }
 
-    .nav a {
-        margin: 0;
-        font-size: 24px;
+    .bienvenu_img img {
+        width: 650px;
     }
 
-    .livrer {
-        width: 300px;
+    .pourquoi_contenu {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* --- 768px --- */
 @media (max-width: 768px) {
-    .menu-burger {
-        padding-inline: 20px;
+      .menu-burger{
+    padding-inline: 20px;
+  }
+  .entete{
+    padding-inline: 20px;
+  }
+  .entete input{
+    width: 240px;
+  }
+   main {
+        padding-top: 25%;
     }
-
-    .entete {
-        padding-inline: 20px;
-        gap: 10px;
+   .nav{
+    width: 300px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+  }
+  .nav a{
+    margin: 0;
+    font-size: 18px;
+  }
+   .bienvenu_img img {
+        width: 350px;
     }
-
-    button a {
-        font-size: 14px;
-    }
-
-    input::placeholder {
-        font-size: 13px;
-    }
-
-    .entete input {
-        width: 240px;
-    }
-
-    main {
-        padding-top: 33%;
-    }
-
-    .nav {
-        width: 450px;
-        padding-left: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 12px;
-    }
-
-    .nav a {
-        margin: 0;
-        font-size: 18px;
-    }
-
-    .contenaire {
-        display: grid;
-        grid-template-columns: 300px 300px
-    }
-
-    .cmd {
-        width: 100%;
-        flex-direction: column;
-        padding: 0;
-        line-height: 1;
-    }
-
-    .livrer {
-        width: 700px;
-    }
-
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -876,147 +682,53 @@ p.commentaire {
     .footer-section {
         margin-bottom: 30px;
     }
-
     .payments img {
         margin-bottom: 10px;
     }
-}
 
-/* --- 425px --- (Téléphones) --- */
-@media (max-width: 425px) {
-    main {
-        width: 100%;
+    }
+    @media (max-width: 425px) {
+        .compte_kassouwa,.panier_choopping {
+            display: none;
+        }
+        main {
+        padding-top: 30%;
     }
 
-    .menu-burger {
-        padding-inline: 10px;
-        height: 200px;
-    }
+  .menu-burger{
+    padding-inline: 10px;
+  }
+  .menu-burger h1{
+    font-size: 13px;
+  }
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    padding: 0;
+    font-size: 12px;
+  }
+  .nav a{
+    margin: 0;
+    font-size: 16px;
+  }
+  .entete input, button{
+    display: none;
+  }
 
-    .menu-burger h1 {
-        font-size: 14px;
-    }
-
-    .compte_kassouwa,
-    .panier_choopping,
-    .mes_contact {
-        display: none;
-    }
-
-    .nav {
-        width: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 6px;
-        padding: 0;
-    }
-
-    .nav a {
-        margin: 0;
-        font-size: 14px;
-    }
-
-    .entete input,
-    button {
-        display: none;
-    }
-
-    .contenaire {
-        display: grid;
-        grid-template-columns: 300px
-    }
-
-    .cmd {
-        width: 100%;
-        flex-direction: column;
-        padding: 0;
-        line-height: 1;
-    }
-
-    .livrer {
-        width: 300px;
-    }
-
-    p.commentaire {
-        width: 360px;
-        font-size: 18px;
-    }
-
-    .livrer,
-    img {
-        width: 400px;
-
+   .pourquoi_contenu {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
-/* --- 375px --- */
-@media (max-width: 375px) {
-    main {
-        width: 100%;
-    }
-
-    .nav a {
-        font-size: 12px;
-    }
-
-    .bienvenu_img img {
-        width: 250px;
-    }
-
-    .cmd {
-        width: 100%;
-        flex-direction: column;
-        padding: 0;
-        line-height: 1;
-    }
-
-    .livrer {
-        width: 170px;
-    }
-
-    p.commentaire {
-        width: 300px;
-        font-size: 18px;
-    }
-
-    .livrer,
-    img {
-        width: 300px;
-
-    }
-}
-
-/* --- 320px --- */
 @media (max-width: 320px) {
-    main {
-        padding-top: 59%;
+         main {
+        padding-top: 35%;
     }
-
-    .menu-burger h1 {
-        font-size: 11px;
-    }
-
-    .nav a {
-        font-size: 10px;
-    }
-
-    .contenaire {
-        grid-template-columns: 1fr;
-    }
-
-    p.commentaire {
+     .bienvenu_img img {
         width: 250px;
-        font-size: 18px;
     }
-
-    .livrer,
-    img {
-        width: 260px;
-    }
-
-    input.code {
-        width: 210px;
-    }
+    
 }

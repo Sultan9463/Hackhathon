@@ -101,7 +101,6 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: tan; */
     width: 100%;
     height: 100px;
     padding-inline: 80px;
@@ -614,19 +613,21 @@ button {
 
 .footer {
     width: 100%;
-    background: #5F6DF7;
+    background: #dddbf2;
     color: #fff;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     bottom: 0;
+    color: #000000;
 }
+
 .footer-container {
     max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    
 }
+
 .footer-section {
     padding: 20px 0;
     margin-bottom: 40px;
@@ -642,15 +643,17 @@ button {
     transition: 0.5s ease;
     cursor: pointer;
 }
+
 .payments img:hover {
-   transform: scale(1.5);
+    transform: scale(1.5);
 
 }
 
-.footer-section h3, 
+.footer-section h3,
 .footer-section h4 {
     margin-bottom: 10px;
 }
+
 .socials a i {
     font-size: 30px;
     margin-right: 10px;
@@ -672,6 +675,7 @@ button {
     margin-top: 20px;
     opacity: 0.8;
 }
+
 
 @media (max-width: 1440px) {
     input{
@@ -787,9 +791,8 @@ button {
   .products-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-
-   .footer-container {
-        flex-direction: column;
+    .footer-container {
+        flex-direction: column !important;
         align-items: center;
         text-align: center;
     }
@@ -797,6 +800,7 @@ button {
     .footer-section {
         margin-bottom: 30px;
     }
+
     .payments img {
         margin-bottom: 10px;
     }

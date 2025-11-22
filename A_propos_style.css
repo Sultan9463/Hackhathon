@@ -22,8 +22,15 @@ main {
     height: 100vh;
     padding-top: 9%;
     gap: 10px;
-    /* padding-inline: 80px; */
     background-color: white;
+}
+.A_propos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 80px; 
 }
 
 
@@ -51,6 +58,7 @@ header {
     padding-bottom: 20px;
     background-color: #dddbf2;
 }
+
 .burger {
     width: 40px;
     height: 40px;
@@ -162,20 +170,14 @@ button {
 
 /* -------------------- SECTION HERO -------------------- */
 
-.A_propos{
-    padding-inline: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.bienvenu{
+.bienvenu {
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    padding-inline: 20%;
     padding: 60px 0;
     gap: 40px;
+    width: 100%;
 }
 
 .bienvenu_text h1 {
@@ -183,17 +185,12 @@ button {
     font-weight: 700;
 }
 
-.bienvenu_text{
-    width: 600px;
-    line-height: 1.8;
-}
-
 .bienvenu_text h1 span {
-    color: #EEAD33;
+    color: #6c7bff;
 }
 
 .bienvenu_text p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .bienvenu_img img {
@@ -206,7 +203,7 @@ button {
 
 .mission {
     text-align: center;
-    width: 1060px;
+    padding: 60px 20px;
 }
 
 .mission h2 {
@@ -215,13 +212,14 @@ button {
 }
 
 .mission p {
-    width: 300px;
+    width: 100%;
     margin-top: 15px;
     font-size: 18px;
-    width: 100%;
+    /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /* -------------------- AVANTAGES -------------------- */
 
@@ -248,18 +246,17 @@ button {
 }
 
 .carte {
-    border-radius: 10px;
     border: 1px solid #eee;
     padding: 25px;
     transition: 0.3s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(white) padding-box, 
+    background: linear-gradient(white) padding-box,
 }
 
 .carte:hover {
-   transform: translateY(-5px);
-   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-   border: 2px solid #F6A622;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 2px solid #F6A622;
 }
 
 .carte img {
@@ -550,19 +547,22 @@ button {
 
 .footer {
     width: 100%;
-    background: #5F6DF7;
+    background: #dddbf2;
     color: #fff;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     bottom: 0;
+    color: #000000;
 }
+
 .footer-container {
     max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    
+
 }
+
 .footer-section {
     padding: 20px 0;
     margin-bottom: 40px;
@@ -578,15 +578,17 @@ button {
     transition: 0.5s ease;
     cursor: pointer;
 }
+
 .payments img:hover {
-   transform: scale(1.5);
+    transform: scale(1.5);
 
 }
 
-.footer-section h3, 
+.footer-section h3,
 .footer-section h4 {
     margin-bottom: 10px;
 }
+
 .socials a i {
     font-size: 30px;
     margin-right: 10px;
@@ -607,25 +609,29 @@ button {
     text-align: center;
     margin-top: 20px;
     opacity: 0.8;
-}
+} 
+
 /* ------------------------------- */
 
 @media (max-width: 1440px) {
-    input{
+    input {
         width: 350px;
     }
-    .menu-burger{
+
+    .menu-burger {
         align-items: center;
         justify-content: center;
         height: 70px;
     }
-   
-     main {
+
+    main {
         padding-top: 14%;
     }
-    .compte_kassouwa, .panier_choopping {
-    position: absolute;
-    top: 20%; 
+
+    .compte_kassouwa,
+    .panier_choopping {
+        position: absolute;
+        top: 20%;
     }
 }
 
@@ -633,23 +639,27 @@ button {
 
 @media (max-width: 1024px) {
 
-     main {
+    main {
         padding-top: 20%;
     }
-     .entete{
-      padding-inline: 20px;
+
+    .entete {
+        padding-inline: 20px;
         gap: 20px;
     }
-    .nav{
-      width: 600px;
+
+    .nav {
+        width: 600px;
     }
-     .entete img{
+
+    .entete img {
         width: 200px;
         height: 120;
     }
-    .menu-burger{
-      font-size: 10px;
-      padding-inline: 40px;
+
+    .menu-burger {
+        font-size: 10px;
+        padding-inline: 40px;
     }
 
     .bienvenu {
@@ -667,42 +677,51 @@ button {
 }
 
 @media (max-width: 768px) {
-   .menu-burger{
-    padding-inline: 20px;
-  }
-  .entete{
-    padding-inline: 20px;
-    gap: 10px;
-  }
-  button a{
-    font-size: 14px;
-  }
-  input::placeholder{
-    font-size: 13px;
-  }
-  .entete input{
-    width: 240px;
-  }
-   main {
+    .menu-burger {
+        padding-inline: 20px;
+    }
+
+    .entete {
+        padding-inline: 20px;
+        gap: 10px;
+    }
+
+    button a {
+        font-size: 14px;
+    }
+
+    input::placeholder {
+        font-size: 13px;
+    }
+
+    .entete input {
+        width: 240px;
+    }
+
+    main {
         padding-top: 31%;
     }
-   .nav{
-    width: 450px;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 12px;
-  }
-  .nav a{
-    margin: 0;
-    font-size: 18px;
-  }
-  .bienvenu{
-    padding: 0;
-  }
-   .bienvenu_img img {
+
+    .nav {
+        width: 450px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .bienvenu {
+        padding: 0;
+    }
+
+    .bienvenu_img img {
         width: 350px;
     }
 
@@ -715,87 +734,105 @@ button {
     .footer-section {
         margin-bottom: 30px;
     }
+
     .payments img {
         margin-bottom: 10px;
     }
+}
+
+
+@media (max-width: 425px) {
+    .menu-burger {
+        padding-inline: 10px;
     }
 
+    .menu-burger h1 {
+        font-size: 13px;
+    }
 
-    @media (max-width: 425px) {
-        .menu-burger{
-    padding-inline: 10px;
-  }
-  .menu-burger h1{
-    font-size: 13px;
-  }
-  .compte_kassouwa,.panier_choopping {
-            display: none;
-        }
-  .nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 6px;
-    padding: 0;
-  }
-  .nav a{
-    margin: 0;
-    font-size: 15px;
-  }
-  .entete input, button{
-    display: none;
-  }
-  main{
-    padding-top: 42%;
-  }
+    .compte_kassouwa,
+    .panier_choopping {
+        display: none;
+    }
 
-   .pourquoi_contenu {
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 6px;
+        padding: 0;
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .entete input,
+    button {
+        display: none;
+    }
+
+    main {
+        padding-top: 42%;
+    }
+
+    .pourquoi_contenu {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 
 @media (max-width: 375px) {
-  main{
-    padding-top: 56%;
+    main {
+        padding-top: 56%;
         width: 100%;
     }
 
-  .menu-burger{
-    padding-inline: 10px;
-    height: 200px;
-  }
-  .menu-burger h1{
-    font-size: 14px;
-  }
-  .compte_kassouwa,.panier_choopping, .mes_contact{
-            display: none;
-        }
-  .nav{
-    width: 440px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 6px;
-    padding: 0;
-  }
-  .nav a{
-    margin: 0;
-    font-size: 10px;
-  }
-  .entete input, button{
-    display: none;
-  }
+    .menu-burger {
+        padding-inline: 10px;
+        height: 200px;
+    }
+
+    .menu-burger h1 {
+        font-size: 14px;
+    }
+
+    .compte_kassouwa,
+    .panier_choopping,
+    .mes_contact {
+        display: none;
+    }
+
+    .nav {
+        width: 440px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 6px;
+        padding: 0;
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .entete input,
+    button {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
-         main {
+    main {
         padding-top: 67%;
     }
-     .bienvenu_img img {
+
+    .bienvenu_img img {
         width: 250px;
     }
-    
+
 }
