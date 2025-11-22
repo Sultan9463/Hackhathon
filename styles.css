@@ -620,6 +620,9 @@ button {
     bottom: 0;
     color: #000000;
 }
+a {
+  text-decoration: none;
+}
 
 .footer-container {
     max-width: 100%;

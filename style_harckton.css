@@ -659,6 +659,9 @@ p.commentaire {
     cursor: pointer;
     color: white;
 }
+a {
+    text-decoration: none;
+}
 
 .choopping_footer {
     display: flex;
