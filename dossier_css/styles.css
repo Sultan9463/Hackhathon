@@ -695,6 +695,15 @@ a {
     opacity: 0.8;
 }
 
+.loging{
+  display: flex;
+  gap: 10px;
+}
+.loging i{
+  font-size: 22px;
+  color: black;
+}
+
 
 @media (max-width: 1440px) {
     input{
@@ -850,7 +859,33 @@ a {
     font-size: 13px;
   }
   .compte_kassouwa,.panier_choopping {
-            display: none;
+        display: flex;
+            width: 400px;
+            height: 650px;
+            gap: 10px;
+        }
+
+         .compte_kassouwa h1, h5{
+            font-size: 20px;
+         }
+         .panier_choopping h1, h5{
+            font-size: 20px;
+         }
+
+
+        .compte_kassouwa,.panier_chooppingh1{
+            font-size: 20px;
+        }
+        .reseau{
+          flex-direction: column;
+          gap: 10px;
+          padding: 0;
+        }
+        .paragrah a, p{
+            font-size: 16px;
+        }
+        .code_utile{
+          width: 300px;
         }
   .nav{
     display: flex;
@@ -955,6 +990,16 @@ a {
   main h1{
     font-size: 24px;
   }
+   .compte_kassouwa,.panier_choopping {
+            display: flex;
+            width: 320px;
+        }
+        .reseau{
+          flex-direction: column;
+        }
+        .code_utile{
+          width: 240px;
+        }
 
 }
 @media (max-width: 320px) {
@@ -969,6 +1014,58 @@ a {
     .nav a {
         font-size: 10px;
     }
+
+     .compte_kassouwa,.panier_choopping {
+            display: flex;
+            width: 300px;
+        }
+        .reseau{
+          flex-direction: column;
+        }
+        .code_utile{
+          width: 240px;
+        }
+        .entete{
+          gap: 2px;
+        }
+
+        .loging{
+          gap: 4px;
+        }
+        .loging i{
+          font-size: 18px;
+        }
+
+       .compte_kassouwa,.panier_choopping {
+        display: flex;
+            width: 400px;
+            height: 650px;
+            gap: 10px;
+        }
+
+         .compte_kassouwa h1, h5{
+            font-size: 20px;
+         }
+         .panier_choopping h1, h5{
+            font-size: 20px;
+         }
+
+
+        .compte_kassouwa,.panier_chooppingh1{
+            font-size: 20px;
+        }
+        .reseau{
+          flex-direction: column;
+          gap: 10px;
+          padding: 0;
+        }
+        .paragrah a, p{
+            font-size: 16px;
+        }
+        .code_utile{
+          width: 300px;
+        }
+
 
 } 
 

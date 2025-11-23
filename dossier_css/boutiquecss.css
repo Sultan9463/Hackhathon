@@ -1246,6 +1246,16 @@ a{
     opacity: 0.8;
 }
 
+.loging{
+  display: flex;
+  gap: 10px;
+}
+.loging i{
+  font-size: 22px;
+  color: black;
+}
+
+
 /* Responsive-------------------------- */
 @media (max-width: 1440px) {
     input {
@@ -1619,11 +1629,10 @@ a{
         font-size: 14px;
     }
 
-    .compte_kassouwa,
-    .panier_choopping,
-    .mes_contact {
-        display: none;
-    }
+   .panier_choopping{
+    justify-content: center;
+    padding-right: 0;
+   }
 
     .nav {
         width: 400px;
@@ -1701,6 +1710,35 @@ a{
     main {
         padding-top: 55%;
     }
+        .compte_kassouwa,.panier_choopping {
+        display: flex;
+            width: 400px;
+            height: 650px;
+            gap: 10px;
+        }
+
+         .compte_kassouwa h1, h5{
+            font-size: 20px;
+         }
+         .panier_choopping h1, h5{
+            font-size: 20px;
+         }
+
+
+        .compte_kassouwa,.panier_chooppingh1{
+            font-size: 20px;
+        }
+        .reseau{
+          flex-direction: column;
+          gap: 10px;
+          padding: 0;
+        }
+        .paragrah a, p{
+            font-size: 16px;
+        }
+        .code_utile{
+          width: 300px;
+        }
 
 }
 
@@ -1733,6 +1771,16 @@ a{
   main h1{
     font-size: 24px;
   }
+   .compte_kassouwa,.panier_choopping {
+            display: flex;
+            width: 320px;
+        }
+        .reseau{
+          flex-direction: column;
+        }
+        .code_utile{
+          width: 240px;
+        }
 
 }
 
@@ -1757,4 +1805,25 @@ a{
     main {
         padding-top: 60%;
     }
+    .entete{
+          gap: 2px;
+        }
+
+        .loging{
+          gap: 4px;
+        }
+        .loging i{
+          font-size: 18px;
+        }
+
+        .compte_kassouwa,.panier_choopping {
+            display: flex;
+            width: 300px;
+        }
+        .reseau{
+          flex-direction: column;
+        }
+        .code_utile{
+          width: 240px;
+        }
 }
