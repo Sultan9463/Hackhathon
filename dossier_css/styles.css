@@ -862,7 +862,7 @@ a {
   }
   .nav a{
     margin: 0;
-    font-size: 15px;
+    font-size: 12px;
   }
   .entete input, button{
     display: none;
@@ -958,9 +958,18 @@ a {
 
 }
 @media (max-width: 320px) {
-    main{
-    padding-top: 58%;
-  }
+   main {
+        padding-top: 59%;
+    }
+
+    .menu-burger h1 {
+        font-size: 8px;
+    }
+
+    .nav a {
+        font-size: 10px;
+    }
+
 } 
 
 
