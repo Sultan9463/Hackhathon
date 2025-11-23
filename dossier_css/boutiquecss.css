@@ -1609,9 +1609,6 @@ a{
 
 @media (max-width: 425px) {
 
-    main {
-        width: 100%;
-    }
 
     .menu-burger {
         padding-inline: 10px;
@@ -1702,7 +1699,7 @@ a{
     }
 
     main {
-        padding-top: 45%;
+        padding-top: 55%;
     }
 
 }
@@ -1739,6 +1736,6 @@ a{
     }
 
     main {
-        padding-top: 58%;
+        padding-top: 68%;
     }
 }

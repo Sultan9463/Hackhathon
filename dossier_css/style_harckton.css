@@ -911,8 +911,9 @@ a {
 /* --- 425px --- (Téléphones) --- */
 @media (max-width: 425px) {
     main {
-        width: 100%;
+        padding-top: 46%;
     }
+
 
     .menu-burger {
         padding-inline: 10px;
@@ -924,9 +925,13 @@ a {
     }
 
     .compte_kassouwa,
-    .panier_choopping,
-    .mes_contact {
+    .panier_choopping{
         display: none;
+    }
+    .mes_contact{
+        width: 350px;
+        height: 250px;
+        overflow: none;
     }
 
     .nav {
@@ -959,6 +964,7 @@ a {
         flex-direction: column;
         padding: 0;
         line-height: 1;
+        padding-right: 30px;
     }
 
     .livrer {
@@ -970,17 +976,37 @@ a {
         font-size: 18px;
     }
 
-    .livrer,
-    img {
-        width: 400px;
+    .cmd img {
+        width: 250px;
+        animation: flotant 2s ease-in-out infinite alternate;
+    }
 
+    @keyframes flotant {
+        form {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(20px);
+        }
+    }
+
+    /* .livrer,
+    img {
+        display: none;
+        width: 200px;
+
+    } */
+
+    .call_me {
+    width: 300px;
     }
 }
 
 /* --- 375px --- */
 @media (max-width: 375px) {
     main {
-        width: 100%;
+        padding-top: 53%;
     }
 
     .nav a {
