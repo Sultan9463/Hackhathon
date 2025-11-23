@@ -942,6 +942,9 @@ a {
    main{
     padding-top: 47%;
   }
+  main h1{
+    font-size: 24px;
+  }
 
 }
 @media (max-width: 320px) {

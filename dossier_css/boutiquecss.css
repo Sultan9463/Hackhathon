@@ -82,7 +82,7 @@ nav {
     position: absolute;
     top: 130px;
     left: 50px;
-    background-color: rgb(238, 230, 220);
+    background-color:rgb(249, 247, 247);
     width: 250px;
     height: 370px;
     margin-top: 60px;
@@ -1608,17 +1608,22 @@ a{
 
 @media (max-width: 425px) {
 
+    main {
+        width: 100%;
+    }
+
     .menu-burger {
         padding-inline: 10px;
         height: 200px;
     }
 
     .menu-burger h1 {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .compte_kassouwa,
-    .panier_choopping {
+    .panier_choopping,
+    .mes_contact {
         display: none;
     }
 
@@ -1634,13 +1639,14 @@ a{
 
     .nav a {
         margin: 0;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .entete input,
     button {
         display: none;
     }
+
 
     /* mmmmmmememme */
     .product-popup .popup-contenu {
@@ -1701,24 +1707,14 @@ a{
 }
 
 @media (max-width: 375px) {
-    .nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 6px;
-        padding: 0;
-        font-size: 12px;
+    main {
+        width: 100%;
     }
 
     .nav a {
-        margin: 0;
-        font-size: 16px;
+        font-size: 12px;
     }
 
-    main {
-        padding-top: 47%;
-    }
 
 }
 
