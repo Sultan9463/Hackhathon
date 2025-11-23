@@ -179,8 +179,6 @@ button {
     margin-right: 19px;
     padding-right: 5px;
     color: #333;
-    border-right: 2px solid red;
-
 }
 
 .nav a:hover {
@@ -754,11 +752,11 @@ a{
         align-items: center;
         text-align: center;
     }
-
     .footer-section {
-        margin-bottom: 30px;
+      padding-top: 10px;
+      padding-bottom: 0;
+      margin-bottom: 0px;
     }
-
     .payments img {
         margin-bottom: 10px;
     }

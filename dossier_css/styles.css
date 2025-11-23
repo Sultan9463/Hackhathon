@@ -153,7 +153,6 @@ button {
     margin-right: 19px;
     padding-right: 5px;
     color: #333;
-    border-right: 2px solid #0FB02B;
 
 }
 
@@ -811,6 +810,15 @@ a {
   .products-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+  .footer {
+    width: 100%;
+   background-color: #F09835;
+    color: #fff;
+    padding: 10px 10px;
+    font-family: Arial, sans-serif;
+    bottom: 0;
+    color: #000000;
+  }
     .footer-container {
         flex-direction: column !important;
         align-items: center;
@@ -818,7 +826,9 @@ a {
     }
 
     .footer-section {
-        margin-bottom: 30px;
+      padding-top: 10px;
+      padding-bottom: 0;
+      margin-bottom: 0px;
     }
 
     .payments img {

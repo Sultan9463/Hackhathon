@@ -172,7 +172,6 @@ button {
     margin-right: 19px;
     padding-right: 5px;
     color: #333;
-    border-right: 2px solid #0FB02B;
 
 }
 
@@ -1596,8 +1595,10 @@ a{
         text-align: center;
     }
 
-    .footer-section {
-        margin-bottom: 30px;
+   .footer-section {
+      padding-top: 10px;
+      padding-bottom: 0;
+      margin-bottom: 0px;
     }
 
     .payments img {
