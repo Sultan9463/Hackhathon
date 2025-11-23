@@ -858,24 +858,36 @@ a {
   .menu-burger h1{
     font-size: 13px;
   }
-  .compte_kassouwa,.panier_choopping {
+  .compte_kassouwa{
         display: flex;
+        padding-top: 200px;
             width: 400px;
-            height: 650px;
+            height: 450px;
             gap: 10px;
         }
 
+        .panier_choopping{
+        display: flex;
+            width: 400px;
+            height: 450px;
+            gap: 10px;
+        }
+        .email, .facebook{
+          width: 130px;
+          height: 40px;
+          font-size: 16px;
+        }
+        .email a{
+          font-size: 16px;
+        }
          .compte_kassouwa h1, h5{
-            font-size: 20px;
+            font-size: 19px;
+            padding: 0;
          }
          .panier_choopping h1, h5{
             font-size: 20px;
+            padding: 0;
          }
-
-
-        .compte_kassouwa,.panier_chooppingh1{
-            font-size: 20px;
-        }
         .reseau{
           flex-direction: column;
           gap: 10px;
