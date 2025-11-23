@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Harckton</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_harckton.css">
+    <link rel="stylesheet" href="dossier_css/style_harckton.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -13,7 +13,10 @@
     <header>
         <div class="entete">
             <img src="images/logo.png" alt="">
-            <input type="text" placeholder=" 🔍 Recherche des produits locaux">
+            <div class="trading">
+                <input type="text" placeholder="Recherche des produits" class="code_rech">
+                <div class="direct_rech"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
            <button><i class="fa-solid fa-user"></i> <a href="#connecting" id="close">Creer un compte</a></button>
             <button> <i class="fa-solid fa-cart-shopping"></i><a href="#choopp" id="ferme"> Panier</a></button>
            <!-- <a href="index_livraison.html"><button><i class="fa-solid fa-truck-fast"></i>Livraison</button></a> -->
@@ -29,17 +32,18 @@
             <h1>Catégories des produits</h1>
             <nav>
                 <h2>Catégories</h2>
-                <a href="index_cereale.html">Produit céréales</a>
-                <a href="index_artisant.html">Produit artisanat</a>
-                <a href="index_legime.html">Produit légumes</a>
-                <a href="index_divers.html">Produit divers</a>
-                <!-- <a href="#">Restaurant en ligne</a> -->
+                <a href="index_cereale.html">Produits céréales</a>
+                <a href="index_artisant.html">Produits artisanat</a>
+                <a href="index_legime.html">Produits légumes</a>
+                <a href="index_divers.html">Produits divers</a>
             </nav>
+
             <div class="nav">
-                <a href="index.html">Acceuil</a>
-                <a href="index_boutique.html">Boutique</a>
-                <a href="index_Apropos.html">A propos</a>
+                <a href="index.html">Accueil</a>
+                <a href="index_boutique.html" class="active">Boutique</a>
+                <a href="index_Apropos.html">À propos</a>
                 <a href="index_livraison.html">Livraison</a>
+            </div>
             </div>
         </div>
     </header>
@@ -51,7 +55,7 @@
         <section class="contenaire">
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/1728891992.jpg" alt="">
+                    <img src="images/1728891992.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -70,7 +74,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/35_grid.jpg" alt="">
+                    <img src="images/35_grid.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -89,7 +93,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/57fe880ae9a8f7688dd7ea859c220c5f.jpg" alt="">
+                    <img src="images/57fe880ae9a8f7688dd7ea859c220c5f.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -108,7 +112,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/61P12-TDauL._AC_UY1000_.jpg" alt="">
+                    <img src="images/61P12-TDauL._AC_UY1000_.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -127,7 +131,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/aurelia-dubois-xzrJCS4grC4-unsplash.jpg" alt="">
+                    <img src="images/aurelia-dubois-xzrJCS4grC4-unsplash.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -146,7 +150,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/bague-argent-925-touareg-chevaliere-rectangle-niger-332.jpg" alt="">
+                    <img src="images/bague-argent-925-touareg-chevaliere-rectangle-niger-332.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -165,7 +169,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="/artisanat/bague-argent-925-touareg-longue-navette-niger-345.jpg" alt="">
+                    <img src="images/bague-argent-925-touareg-longue-navette-niger-345.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -184,7 +188,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/bague-touareg-large-ajouree-argent-925-et-ebene-niger-065.jpg" alt="">
+                    <img src="images/bague-touareg-large-ajouree-argent-925-et-ebene-niger-065.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -203,7 +207,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/bijoux-touareg-en-argent-925-562400.webp" alt="">
+                    <img src="images/bijoux-touareg-en-argent-925-562400.webp" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -222,7 +226,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/bijoux-touareg-reflets-de-bijoux.jpg" alt="">
+                    <img src="images/bijoux-touareg-reflets-de-bijoux.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -241,7 +245,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/boucles-d-oreilles-touareg-croix-du-sud-de-takadea-argent-925-niger-032 (1).jpg"
+                    <img src="images/boucles-d-oreilles-touareg-croix-du-sud-de-takadea-argent-925-niger-032 (1).jpg"
                         alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
@@ -261,7 +265,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/bracelet-touareg-argent-925-jonc-fin-rond-et-ebene-niger-003.jpg" alt="">
+                    <img src="images/bracelet-touareg-argent-925-jonc-fin-rond-et-ebene-niger-003.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -280,7 +284,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/il_570xN.6138992454_q2n8.jpg" alt="">
+                    <img src="images/il_570xN.6138992454_q2n8.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -299,7 +303,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/file.jpg" alt="">
+                    <img src="images/file.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -318,7 +322,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/bracelet-touareg.jpg" alt="">
+                    <img src="images/bracelet-touareg.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -337,7 +341,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="artisanat/bracelet-touareg-argent-925-jonc-fin-rond-et-ebene-niger-003.jpg" alt="">
+                    <img src="images/bracelet-touareg-argent-925-jonc-fin-rond-et-ebene-niger-003.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -360,17 +364,17 @@
     <div class="footer-container">
 
         <div class="footer-section">
-            <img src="./photo/logo.png" alt="Logo" class="footer-logo">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
             <p>Votre boutique de vente des produits locaux made in Niger.</p>
         </div>
         <div class="footer-section">
             <h4>Moyens de paiement</h4>
             <div class="payments">
-                <img src="./photo/nita.png" alt="Nita">
-                <img src="./photo/amana.jpg" alt="Amana">
-                <img src="./photo/zamani-cash.png" alt="zamani-cash">
-                <img src="./photo/airtel-money.png" alt="airtel-money">
-                <img src="./photo/carte-credit.avif" alt="carte-credit">
+                <img src="images/nita.png" alt="Nita">
+                <img src="images/amana.jpg" alt="Amana">
+                <img src="images/zamani-cash.png" alt="zamani-cash">
+                <img src="images/airtel-money.png" alt="airtel-money">
+                <img src="images/carte-credit.avif" alt="carte-credit">
             </div>
         </div>
        

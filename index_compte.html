@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kassuwata – Accueil</title>
-    <link rel="stylesheet" href="style_harckton.css">
+    <link rel="stylesheet" href="dossier_css/style_harckton.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -13,7 +13,10 @@
 <header>
     <div class="entete">
         <img src="images/logo.png" alt="">
-        <input type="text" placeholder=" 🔍 Recherche des produits locaux">
+        <div class="trading">
+                <input type="text" placeholder="Recherche des produits" class="code_rech">
+                <div class="direct_rech"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
         <button><i class="fa-solid fa-user"></i> Creer un compte</button>
         <button> <i class="fa-solid fa-cart-shopping"></i> Panier</button>
         <!-- <a href="index_livraison.html"><button><i class="fa-solid fa-truck-fast"></i>Livraison</button></a> -->
@@ -26,21 +29,19 @@
         </label>
 
         <h1>Catégories des produits</h1>
-
-        <nav>
-            <h2>Catégories</h2>
-            <a href="index_cereale.html">Produits céréales</a>
-            <a href="index_artisant.html">Produits artisanat</a>
-            <a href="index_legume.html">Produits légumes</a>
-            <a href="index_divers.html">Produits divers</a>
-        </nav>
-
-        <div class="nav">
-            <a href="index.html">Accueil</a>
-            <a href="index_boutique.html">Boutique</a>
-            <a href="index_Apropos.html">À propos</a>
-            <a href="index_livraison.html">Livraison</a>
-        </div>
+            <nav>
+                <h2>Catégories</h2>
+                <a href="dossier_html/index_cereale.html">Produits céréales</a>
+                <a href="dossier_html/index_artisant.html">Produits artisanat</a>
+                <a href="dossier_html/index_legime.html">Produits légumes</a>
+                <a href="dossier_html/index_divers.html">Produits divers</a>
+            </nav>
+            <div class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="dossier_html/index_boutique.html" class="active">Boutique</a>
+                <a href="dossier_html/index_Apropos.html">À propos</a>
+                <a href="dossier_html/index_livraison.html">Livraison</a>
+            </div>
     </div>
 </header>
 

@@ -5,13 +5,17 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harckton</title>
-  <link rel="stylesheet" href="style_harckton.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="dossier_css/style_harckton.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
          <div class="entete">
             <img src="images/logo.png" alt="">
-            <input type="text" placeholder=" 🔍 Recherche des produits locaux">
+            <div class="trading">
+                <input type="text" placeholder="Recherche des produits" class="code_rech">
+                <div class="direct_rech"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
             <button><i class="fa-solid fa-user"></i> <a href="#connecting" id="close">Creer un compte</a></button>
            <button> <i class="fa-solid fa-cart-shopping"></i><a href="#choopp" id="ferme"> Panier</a></button>
             <!-- <a href="index_livraison.html"><button><i class="fa-solid fa-truck-fast"></i>Livraison</button></a> -->
@@ -25,17 +29,18 @@
                 <span></span>
             </label>
             <h1>Catégories des produits</h1>
-            <nav>
+           <nav>
                 <h2>Catégories</h2>
-                <a href="index_cereale.html">Produit céréales</a>
-                <a href="index_artisant.html">Produit artisanat</a>
-                <a href="index_legime.html">Produit légumes</a>
-                <a href="index_divers.html">Produit divers</a>
+                <a href="index_cereale.html">Produits céréales</a>
+                <a href="index_artisant.html">Produits artisanat</a>
+                <a href="index_legime.html">Produits légumes</a>
+                <a href="index_divers.html">Produits divers</a>
             </nav>
-             <div class="nav">
-                <a href="index.html">Acceuil</a>
-                <a href="index_boutique.html">Boutique</a>
-                <a href="index_Apropos.html">A propos</a>
+
+            <div class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="index_boutique.html" class="active">Boutique</a>
+                <a href="index_Apropos.html">À propos</a>
                 <a href="index_livraison.html">Livraison</a>
             </div>
         </div>

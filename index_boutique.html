@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boutique</title>
-    <link rel="stylesheet" href="boutiquecss.css">
+    <link rel="stylesheet" href="dossier_css/boutiquecss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -14,7 +14,10 @@
     <header>
     <div class="entete">
         <img src="images/logo.png" alt="">
-        <input type="text" placeholder=" 🔍 Recherche des produits locaux">
+        <div class="trading">
+                <input type="text" placeholder="Recherche des produits" class="code_rech">
+                <div class="direct_rech"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
        <button><i class="fa-solid fa-user"></i> <a href="#connecting" id="close">Profil</a></button>
         <button> <i class="fa-solid fa-cart-shopping"></i><a href="#choopp" id="ferme"> Panier</a></button>
        <!-- <a href="index_livraison.html"><button><i class="fa-solid fa-truck-fast"></i>Livraison</button></a> -->
@@ -28,20 +31,20 @@
 
         <h1>Catégories des produits</h1>
 
-        <nav>
-            <h2>Catégories</h2>
-            <a href="index_cereale.html">Produits céréales</a>
-            <a href="index_artisant.html">Produits artisanat</a>
-            <a href="index_legume.html">Produits légumes</a>
-            <a href="index_divers.html">Produits divers</a>
-        </nav>
+            <nav>
+                <h2>Catégories</h2>
+                <a href="index_cereale.html">Produits céréales</a>
+                <a href="index_artisant.html">Produits artisanat</a>
+                <a href="index_legime.html">Produits légumes</a>
+                <a href="index_divers.html">Produits divers</a>
+            </nav>
 
-        <div class="nav">
-            <a href="index.html">Accueil</a>
-            <a href="index_boutique.html" class="active">Boutique</a>
-            <a href="index_Apropos.html">À propos</a>
-            <a href="index_livraison.html">Livraison</a>
-        </div>
+            <div class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="index_boutique.html" class="active">Boutique</a>
+                <a href="index_Apropos.html">À propos</a>
+                <a href="index_livraison.html">Livraison</a>
+            </div>
     </div>
 </header>
 
@@ -54,7 +57,7 @@
         <div class="liste-promo">
             <!-- Produit en promotion 1 -->
             <div class="produit-promo">
-                <img src="tomate.jpg" alt="Promotion de tomate frais">
+                <img src="images/tomate.jpg" alt="Promotion de tomate frais">
                 <div class="details-promo">
                     <p class="nom-promo">Tomates fraîches</p>
                     <p class="prix-promo">8000 FCFA/Kg <span class="ancien-prix">9000 FCFA/Kg</span></p>
@@ -62,7 +65,7 @@
             </div>
             <!-- Produit en promotion 2 -->
             <div class="produit-promo">
-                <img src="boubou.jpg" alt="Promotion de boubou cousus">
+                <img src="images/boubou.jpg" alt="Promotion de boubou cousus">
                 <div class="details-promo">
                     <p class="nom-promo">BOUBOU COUSU ARTISANALE</p>
                     <p class="prix-promo">12000FCFA<span class="ancien-prix"> 15000FCFA</span></p>
@@ -70,7 +73,7 @@
             </div>
             <!-- Produit en promotion 3 -->
             <div class="produit-promo">
-                <img src="jus.jpg" alt="Promotion JUS NATUREL">
+                <img src="images/jus.jpg" alt="Promotion JUS NATUREL">
                 <div class="details-promo">
                     <p class="nom-promo">JUS NATUREL</p>
                     <p class="prix-promo">400 FCFA <span class="ancien-prix">500 FCFA</span></p>
@@ -78,7 +81,7 @@
             </div>
             <!-- Produit en promotion 4 -->
             <div class="produit-promo">
-                <img src="BeurreArachid.jpg" alt="Promotion BEURRE D'ARACHIDE">
+                <img src="images/BeurreArachid.jpg" alt="Promotion BEURRE D'ARACHIDE">
                 <div class="details-promo">
                     <p class="nom-promo">Beurre d’arachide</p>
                     <p class="prix-promo">2000FCFA <span class="ancien-prix"> 2500FCFA</span></p>
@@ -109,7 +112,7 @@
             <!-- Produit 1 -->
             <div class="carte-produit">
                 <div class="image-produit">
-                    <img src="tomate.jpg" alt="Tomate frais">
+                    <img src="images/tomate.jpg" alt="Tomate frais">
                     <!-- Actions au survol -->
                     <div class="actions-produit">
                         <button class="icone-action" title="Ajouter au panier">
@@ -143,7 +146,7 @@
             <!-- Produit 2 -->
             <div class="carte-produit">
                 <div class="image-produit">
-                    <img src="BeurreArachid.jpg" alt="BEURRE D'ARACHIDE">
+                    <img src="images/BeurreArachid.jpg" alt="BEURRE D'ARACHIDE">
                     <!-- Actions au survol -->
                     <div class="actions-produit">
                         <button class="icone-action" title="Ajouter au panier">
@@ -177,7 +180,7 @@
             <!-- Produit 3 -->
             <div class="carte-produit">
                 <div class="image-produit">
-                    <img src="Bracelet-touareg.jpg" alt="BRACLET TOUAREG ARTISANALE">
+                    <img src="images/Bracelet-touareg.jpg" alt="BRACLET TOUAREG ARTISANALE">
                     <!-- Actions au survol -->
                     <div class="actions-produit">
                         <button class="icone-action" title="Ajouter au panier">
@@ -211,7 +214,7 @@
             <!-- Produit 4 -->
             <div class="carte-produit">
                 <div class="image-produit">
-                    <img src="chaine-touareg.jpeg" alt="CHAINE TOUAREG ARTISANALE">
+                    <img src="images/chaine-touareg.jpeg" alt="CHAINE TOUAREG ARTISANALE">
                     <!-- Actions au survol -->
                     <div class="actions-produit">
                         <button class="icone-action" title="Ajouter au panier">
@@ -245,7 +248,7 @@
                                     <!-- Produit 5 -->
                                     <div class="carte-produit">
                                         <div class="image-produit">
-                                            <img src="chaussure.jpg" alt="CHAUSSURE ARTISANALE">
+                                            <img src="images/chaussure.jpg" alt="CHAUSSURE ARTISANALE">
                                             <!-- Actions au survol -->
                                             <div class="actions-produit">
                                                 <button class="icone-action" title="Ajouter au panier">
@@ -279,7 +282,7 @@
                                     <!-- Produit 6 -->
                                     <div class="carte-produit">
                                         <div class="image-produit">
-                                            <img src="il_300x300.1947087830_r0s3.webp" alt="TISSU ARTISANALE">
+                                            <img src="images/il_570xN.6138992454_q2n8.jpg" alt="TISSU ARTISANALE">
                                             <!-- Actions au survol -->
                                             <div class="actions-produit">
                                                 <button class="icone-action" title="Ajouter au panier">
@@ -313,7 +316,7 @@
                                     <!-- Produit 7 -->
                                     <div class="carte-produit">
                                         <div class="image-produit">
-                                            <img src="boubou.jpg" alt="BOUBOU COUSUS ARTISANALE">
+                                            <img src="images/boubou.jpg" alt="BOUBOU COUSUS ARTISANALE">
                                             <!-- Actions au survol -->
                                             <div class="actions-produit">
                                                 <button class="icone-action" title="Ajouter au panier">
@@ -347,7 +350,7 @@
                                     <!-- Produit 8 -->
                                     <div class="carte-produit">
                                         <div class="image-produit">
-                                            <img src="bague-argent.jpg" alt="BAGUE D'ARGENT ARTISANALE">
+                                            <img src="images/bague-argent.jpg" alt="BAGUE D'ARGENT ARTISANALE">
                                             <!-- Actions au survol -->
                                             <div class="actions-produit">
                                                 <button class="icone-action" title="Ajouter au panier">
@@ -381,7 +384,7 @@
                             <!-- Produit 9 -->
                             <div class="carte-produit">
                                 <div class="image-produit">
-                                    <img src="Chapeau.jpg" alt="CHAPEAU TRADITIONNEL">
+                                    <img src="images/Chapeau.jpg" alt="CHAPEAU TRADITIONNEL">
                                     <!-- Actions au survol -->
                                     <div class="actions-produit">
                                         <button class="icone-action" title="Ajouter au panier">
@@ -415,7 +418,7 @@
                             <!-- Produit 10 -->
                             <div class="carte-produit">
                                 <div class="image-produit">
-                                    <img src="jus.jpg" alt="JUS NATUREL">
+                                    <img src="images/jus.jpg" alt="JUS NATUREL">
                                     <!-- Actions au survol -->
                                     <div class="actions-produit">
                                         <button class="icone-action" title="Ajouter au panier">
@@ -449,7 +452,7 @@
                             <!-- Produit 11 -->
                             <div class="carte-produit">
                                 <div class="image-produit">
-                                    <img src="chapeau_peulh.jpg" alt="CHAPEU PEULH ARTISANAL">
+                                    <img src="images/chapeau_peulh.jpg" alt="CHAPEU PEULH ARTISANAL">
                                     <!-- Actions au survol -->
                                     <div class="actions-produit">
                                         <button class="icone-action" title="Ajouter au panier">
@@ -483,7 +486,7 @@
                             <!-- Produit 12 -->
                         <div class="carte-produit">
                             <div class="image-produit">
-                            <img src="plats.webp" alt="PLAT TRADITIONNEL">
+                            <img src="images/plats.webp" alt="PLAT TRADITIONNEL">
                             <!-- Actions au survol -->
                             <div class="actions-produit">
                                 <button class="icone-action" title="Ajouter au panier">
@@ -591,7 +594,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="tomate.jpg" alt="Tomate frais">
+                    <img src="images/tomate.jpg" alt="Tomate frais">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">TOMATES FRAÎCHES</h2>
@@ -632,7 +635,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="BeurreArachid.jpg" alt="BEURRE D'ARACHIDE">
+                    <img src="images/BeurreArachid.jpg" alt="BEURRE D'ARACHIDE">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">BEURRE D'ARACHIDE</h2>
@@ -673,7 +676,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="Bracelet-touareg.jpg" alt="BRACLET TOUAREG ARTISANALE">
+                    <img src="images/Bracelet-touareg.jpg" alt="BRACLET TOUAREG ARTISANALE">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">BRACELET TOUAREG ARTISANAL</h2>
@@ -713,7 +716,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="chaine-touareg.jpeg" alt="CHAINE TOUAREG ARTISANALE">
+                    <img src="images/chaine-touareg.jpeg" alt="CHAINE TOUAREG ARTISANALE">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">CHAÎNE TOUAREG ARTISANALE</h2>
@@ -753,7 +756,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="chaussure.jpg" alt="CHAUSSURE ARTISANALE">
+                    <img src="images/chaussure.jpg" alt="CHAUSSURE ARTISANALE">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">CHAUSSURE ARTISANALE</h2>
@@ -793,7 +796,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="il_300x300.1947087830_r0s3.webp" alt="TISSU ARTISANALE">
+                    <img src="images/il_300x300.1947087830_r0s3.webp" alt="TISSU ARTISANALE">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">TISSU ARTISANAL</h2>
@@ -834,7 +837,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="boubou.jpg" alt="BOUBOU COUSUS ARTISANALE">
+                    <img src="images/boubou.jpg" alt="BOUBOU COUSUS ARTISANALE">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">BOUBOU COUSU ARTISANALE</h2>
@@ -874,7 +877,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="bague-argent.jpg" alt="BAGUE D'ARGENT ARTISANALE">
+                    <img src="images/bague-argent.jpg" alt="BAGUE D'ARGENT ARTISANALE">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">BAGUE D'ARGENT ARTISANALE</h2>
@@ -914,7 +917,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="Chapeau.jpg" alt="CHAPEAU TRADITIONNEL">
+                    <img src="images/chapeau_peulh.jpg" alt="CHAPEAU TRADITIONNEL">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">CHAPEAU TRADITIONNEL</h2>
@@ -954,7 +957,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="jus.jpg" alt="JUS NATUREL">
+                    <img src="images/jus.jpg" alt="JUS NATUREL">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">JUS NATUREL</h2>
@@ -994,7 +997,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="chapeau_peulh.jpg" alt="CHAPEU PEULH ARTISANAL">
+                    <img src="images/chapeau_peulh.jpg" alt="CHAPEU PEULH ARTISANAL">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">CHAPEU PEULH ARTISANAL</h2>
@@ -1034,7 +1037,7 @@
             <a href="#" class="popup-fermer">&times;</a>
             <div class="popup-corps-produit">
                 <div class="popup-image-produit">
-                    <img src="plats.webp" alt="PLAT TRADITIONNEL">
+                    <img src="images/plats.webp" alt="PLAT TRADITIONNEL">
                 </div>
                 <div class="popup-details-produit">
                     <h2 class="popup-nom-produit">PLAT TRADITIONNEL</h2>
@@ -1073,17 +1076,17 @@
     <div class="footer-container">
 
         <div class="footer-section">
-            <img src="./photo/logo.png" alt="Logo" class="footer-logo">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
             <p>Votre boutique de vente des produits locaux made in Niger.</p>
         </div>
         <div class="footer-section">
             <h4>Moyens de paiement</h4>
             <div class="payments">
-                <img src="./photo/nita.png" alt="Nita">
-                <img src="./photo/amana.jpg" alt="Amana">
-                <img src="./photo/zamani-cash.png" alt="zamani-cash">
-                <img src="./photo/airtel-money.png" alt="airtel-money">
-                <img src="./photo/carte-credit.avif" alt="carte-credit">
+                <img src="images/nita.png" alt="Nita">
+                <img src="images/amana.jpg" alt="Amana">
+                <img src="images/zamani-cash.png" alt="zamani-cash">
+                <img src="images/airtel-money.png" alt="airtel-money">
+                <img src="images/carte-credit.avif" alt="carte-credit">
             </div>
         </div>
        

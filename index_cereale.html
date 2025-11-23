@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Harckton</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_harckton.css">
+    <link rel="stylesheet" href="dossier_css/style_harckton.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -13,7 +13,10 @@
     <header>
         <div class="entete">
             <img src="images/logo.png" alt="">
-            <input type="text" placeholder=" 🔍 Recherche des produits locaux">
+             <div class="trading">
+                <input type="text" placeholder="Recherche des produits" class="code_rech">
+                <div class="direct_rech"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
            <button><i class="fa-solid fa-user"></i> <a href="#connecting" id="close">Creer un compte</a></button>
            <button> <i class="fa-solid fa-cart-shopping"></i><a href="#choopp" id="ferme"> Panier</a></button>
             <!-- <a href="index_livraison.html"><button><i class="fa-solid fa-truck-fast"></i>Livraison</button></a> -->
@@ -29,15 +32,16 @@
             <h1>Catégories des produits</h1>
             <nav>
                 <h2>Catégories</h2>
-                <a href="index_cereale.html">Produit céréales</a>
-                <a href="index_artisant.html">Produit artisanat</a>
-                <a href="index_legime.html">Produit légumes</a>
-                <a href="index_divers.html">Produit divers</a>
+                <a href="index_cereale.html">Produits céréales</a>
+                <a href="index_artisant.html">Produits artisanat</a>
+                <a href="index_legime.html">Produits légumes</a>
+                <a href="index_divers.html">Produits divers</a>
             </nav>
+
             <div class="nav">
-                <a href="index.html">Acceuil</a>
-                <a href="index_boutique.html">Boutique</a>
-                <a href="index_Apropos.html">A propos</a>
+                <a href="index.html">Accueil</a>
+                <a href="index_boutique.html" class="active">Boutique</a>
+                <a href="index_Apropos.html">À propos</a>
                 <a href="index_livraison.html">Livraison</a>
             </div>
         </div>
@@ -50,7 +54,7 @@
         <section class="contenaire">
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/Arachide,_bien_plus_qu_une_simple_cacahu_te_-_09.08.2024.jpg" alt="">
+                    <img src="images/Arachide,_bien_plus_qu_une_simple_cacahu_te_-_09.08.2024.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -69,7 +73,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/Sorgho-Copyright-De-GreenTree-shutterstock.webp" alt="">
+                    <img src="images/Sorgho-Copyright-De-GreenTree-shutterstock.webp" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -88,7 +92,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/graine-de-mil-1kg_jpg.webp" alt="">
+                    <img src="images/graine-de-mil-1kg_jpg.webp" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -107,7 +111,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/produit-grec-sesame.webp" alt="">
+                    <img src="images/produit-grec-sesame.webp" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -126,7 +130,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/9f26a5f820009f51538091f2ce0bfc674da4f420-lg.jpeg" alt="">
+                    <img src="images/9f26a5f820009f51538091f2ce0bfc674da4f420-lg.jpeg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -145,7 +149,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/i102158-riz-nu.jpg" alt="">
+                    <img src="images/i102158-riz-nu.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -164,7 +168,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/Arachide-Informations-sur-la-plante-histoire-utilisations-et-valeur-nutritionnelle.2.jpg"
+                    <img src="images/Arachide-Informations-sur-la-plante-histoire-utilisations-et-valeur-nutritionnelle.2.jpg"
                         alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
@@ -184,7 +188,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/media.jpg" alt="">
+                    <img src="images/media.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -203,7 +207,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/unnamed.jpg" alt="">
+                    <img src="images/unnamed.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -222,7 +226,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/7cef09d0-4598-11ee-9b58-cb80889117a8.jpg.webp" alt="">
+                    <img src="images/7cef09d0-4598-11ee-9b58-cb80889117a8.jpg.webp" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -241,7 +245,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/se-same-1-.jpg" alt="">
+                    <img src="images/se-same-1-.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -260,7 +264,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="céréal/Sorgo-Bianco-Decorticato-1024x985.jpeg" alt="">
+                    <img src="images/Sorgo-Bianco-Decorticato-1024x985.jpeg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -283,17 +287,17 @@
     <div class="footer-container">
 
         <div class="footer-section">
-            <img src="./photo/logo.png" alt="Logo" class="footer-logo">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
             <p>Votre boutique de vente des produits locaux made in Niger.</p>
         </div>
         <div class="footer-section">
             <h4>Moyens de paiement</h4>
             <div class="payments">
-                <img src="./photo/nita.png" alt="Nita">
-                <img src="./photo/amana.jpg" alt="Amana">
-                <img src="./photo/zamani-cash.png" alt="zamani-cash">
-                <img src="./photo/airtel-money.png" alt="airtel-money">
-                <img src="./photo/carte-credit.avif" alt="carte-credit">
+                <img src="images/nita.png" alt="Nita">
+                <img src="images/amana.jpg" alt="Amana">
+                <img src="images/zamani-cash.png" alt="zamani-cash">
+                <img src="images/airtel-money.png" alt="airtel-money">
+                <img src="images/carte-credit.avif" alt="carte-credit">
             </div>
         </div>
        

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harckton</title>
-    <link rel="stylesheet" href="style_harckton.css">
+    <link rel="stylesheet" href="dossier_css/style_harckton.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -13,7 +13,10 @@
     <header>
         <div class="entete">
             <img src="images/logo.png" alt="">
-            <input type="text" placeholder=" 🔍 Recherche des produits locaux">
+            <div class="trading">
+                <input type="text" placeholder="Recherche des produits" class="code_rech">
+                <div class="direct_rech"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
             <button><i class="fa-solid fa-user"></i> <a href="#connecting" id="close">Creer un compte</a></button>
            <button> <i class="fa-solid fa-cart-shopping"></i><a href="#choopp" id="ferme"> Panier</a></button>
             <!-- <a href="index_livraison.html"><button><i class="fa-solid fa-truck-fast"></i>Livraison</button></a> -->
@@ -27,18 +30,18 @@
                 <span></span>
             </label>
             <h1>Catégories des produits</h1>
-            <nav>
+           <nav>
                 <h2>Catégories</h2>
-                <a href="index_cereale.html">Produit céréales</a>
-                <a href="index_artisant.html">Produit artisanat</a>
-                <a href="index_legime.html">Produit légumes</a>
-                <a href="index_divers.html">Produit divers</a>
-                <!-- <a href="#">Restaurant en ligne</a> -->
+                <a href="index_cereale.html">Produits céréales</a>
+                <a href="index_artisant.html">Produits artisanat</a>
+                <a href="index_legime.html">Produits légumes</a>
+                <a href="index_divers.html">Produits divers</a>
             </nav>
+
             <div class="nav">
-                <a href="index.html">Acceuil</a>
-                <a href="index_boutique.html">Boutique</a>
-                <a href="index_Apropos.html">A propos</a>
+                <a href="index.html">Accueil</a>
+                <a href="index_boutique.html" class="active">Boutique</a>
+                <a href="index_Apropos.html">À propos</a>
                 <a href="index_livraison.html">Livraison</a>
             </div>
         </div>
@@ -51,7 +54,7 @@
         <section class="contenaire">
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/bao-menglong-j3EyX9jnThI-unsplash.jpg" alt="">
+                    <img src="images/bao-menglong-j3EyX9jnThI-unsplash.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -70,7 +73,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/bijoux-touareg-en-argent-925-incrustes-en-bois-debene-894131.webp" alt="">
+                    <img src="images/bijoux-touareg-en-argent-925-incrustes-en-bois-debene-894131.webp" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -89,7 +92,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/bijoux-touareg.jpg" alt="">
+                    <img src="images/bijoux-touareg.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -108,7 +111,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/boucles-d-oreilles-touareg-croix-du-sud-de-takadea-argent-925-niger-032.jpg"
+                    <img src="images/boucles-d-oreilles-touareg-croix-du-sud-de-takadea-argent-925-niger-032.jpg"
                         alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
@@ -128,7 +131,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/charlesdeluvio-Ghrv69I9mPw-unsplash.jpg" alt="">
+                    <img src="images/charlesdeluvio-Ghrv69I9mPw-unsplash.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -147,7 +150,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/images (3).jpeg" alt="">
+                    <img src="images/images (3).jpeg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -166,7 +169,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/images (4).jpeg" alt="">
+                    <img src="images/images (4).jpeg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -185,7 +188,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/laura-chouette-CtOA9wbFAdQ-unsplash.jpg" alt="">
+                    <img src="images/laura-chouette-CtOA9wbFAdQ-unsplash.jpg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -204,7 +207,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/panier-de-m-tier-métier-wooven-du-madagascar-afrique-africain-sac-tresse-brun-décorative-pâques-écologie-vide-exotique-fibre-154680512.jpg"
+                    <img src="images/panier-de-m-tier-métier-wooven-du-madagascar-afrique-africain-sac-tresse-brun-décorative-pâques-écologie-vide-exotique-fibre-154680512.jpg"
                         alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
@@ -224,7 +227,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/photo-1622153060419-468f83a0f8f8.avif" alt="">
+                    <img src="images/photo-1622153060419-468f83a0f8f8.avif" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -243,7 +246,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/sac-a-main_cuir_niger_AB112_01.jpeg" alt="">
+                    <img src="images/sac-a-main_cuir_niger_AB112_01.jpeg" alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
                             <h4>Voir plus des détails</h4>
@@ -262,7 +265,7 @@
             </div>
             <div class="card">
                 <div class="cereal">
-                    <img src="divers/sahelia-creations-bijoux-touareg-artisanaux-bague-sahelia-creations-inspiration-ethnique-touareg-or-argent-pendentif-sahelia-et-sa-chaine-2.webp"
+                    <img src="images/sahelia-creations-bijoux-touareg-artisanaux-bague-sahelia-creations-inspiration-ethnique-touareg-or-argent-pendentif-sahelia-et-sa-chaine-2.webp"
                         alt="">
                     <div class="detail">
                         <a href="#Mijinyawa" id="fermer">
@@ -286,17 +289,17 @@
     <div class="footer-container">
 
         <div class="footer-section">
-            <img src="./photo/logo.png" alt="Logo" class="footer-logo">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
             <p>Votre boutique de vente des produits locaux made in Niger.</p>
         </div>
         <div class="footer-section">
             <h4>Moyens de paiement</h4>
             <div class="payments">
-                <img src="./photo/nita.png" alt="Nita">
-                <img src="./photo/amana.jpg" alt="Amana">
-                <img src="./photo/zamani-cash.png" alt="zamani-cash">
-                <img src="./photo/airtel-money.png" alt="airtel-money">
-                <img src="./photo/carte-credit.avif" alt="carte-credit">
+                <img src="images/nita.png" alt="Nita">
+                <img src="images/amana.jpg" alt="Amana">
+                <img src="images/zamani-cash.png" alt="zamani-cash">
+                <img src="images/airtel-money.png" alt="airtel-money">
+                <img src="images/carte-credit.avif" alt="carte-credit">
             </div>
         </div>
        
